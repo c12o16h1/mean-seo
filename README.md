@@ -1,5 +1,5 @@
-# MEAN-SEO
-SEO Solution for MEAN.JS applications which forwards crawlers requests to a compiled HTML copy using PhantomJS.
+# METEOR-MEAN-SEO
+'mean-seo' package wrapped for Meteor 1.3.x 
 
 ## Longer Version
 If you ever tried to make your AngularJS application crawler friendly, you already know this is a bit of a headache. Part of evolving the MEAN.JS stack towards production ready state, the MEAN-SEO module makes it pretty simple to make sure your MEAN application is ready for crawlers requests.
@@ -25,7 +25,7 @@ And finally, just before you require the **app.router** middleware add the follo
 	
 	// app.use(app.router) will be below this line 
 
-If you use HTML5 URL scheme then you should let the crawler know you're serving an AJAX application by adding the following to the HEAD tag of your page:
+If you use HTML5 URL scheme then you should let tnpm publishhe crawler know you're serving an AJAX application by adding the following to the HEAD tag of your page:
 
 	<meta name=”fragment” content=”!”>
 
