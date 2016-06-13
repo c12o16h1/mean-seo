@@ -1,8 +1,9 @@
 {
   "name": "mean-seo",
-  "url": "https://github.com/meanjs/mean-seo",
-  "version": "0.0.8",
+  "url": "https://github.com/c12o16h1/mean-seo",
+  "version": "0.0.1",
   "keywords": [
+    "meteorjs",
     "phantomjs",
     "headless",
     "webkit",
@@ -11,8 +12,8 @@
     "seo"
   ],
   "author": {
-    "name": "Roie Cohen and Amos Haviv",
-    "email": "roie.cohen@gmail.com"
+    "name": "Yurii Kovalenko",
+    "email": "c12o16h1@yahoo.com"
   },
   "dependencies": {
     "lodash": "~2.4.x",
