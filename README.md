@@ -2,18 +2,17 @@
 'mean-seo' package wrapped for Meteor 1.3.x 
 
 ## Longer Version
-If you ever tried to make your AngularJS application crawler friendly, you already know this is a bit of a headache. Part of evolving the MEAN.JS stack towards production ready state, the MEAN-SEO module makes it pretty simple to make sure your MEAN application is ready for crawlers requests.
 
 When a crawler requests the page using the [**\_escaped\_fragment\_**](https://developers.google.com/webmasters/ajax-crawling/docs/specification), the module launches the PhantomJS headless-browser, which creates a copy of the page and stores it in cache for future requests. 
 
 ## Quick Install
 First you'll need to install the MEAN-SEO module using npm:
 
-	npm install mean-seo --save
+	npm install meteor-mean-seo --save
 
 Then include in you express application: 
 
-	var seo = require('mean-seo');
+	var seo = require('meteor-mean-seo');
 
 And finally, just before you require the **app.router** middleware add the following:
 	
@@ -25,13 +24,12 @@ And finally, just before you require the **app.router** middleware add the follo
 	
 	// app.use(app.router) will be below this line 
 
-If you use HTML5 URL scheme then you should let tnpm publishhe crawler know you're serving an AJAX application by adding the following to the HEAD tag of your page:
+You should let npm publish the crawler know you're serving an AJAX application by adding the following to the HEAD tag of your page: Ugly URLs like www.domain.com/#!/whaewer is not supported
 
 	<meta name=”fragment” content=”!”>
 
 ## Resources
   - [Google AJAX Application Guide](https://developers.google.com/webmasters/ajax-crawling/docs/specification)
-  - [A Tutorial About AngularJS SEO](http://www.yearofmoo.com/2012/11/angularjs-and-seo.html)
 
 
 ## License

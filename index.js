@@ -1,3 +1,8 @@
 'use strict';
-
-module.exports = require('./lib/mean-seo');
+if(typeof window === 'undefined'){
+    module.exports = require('./lib/mean-seo');
+}else{
+    module.exports = function(){
+        return null;
+    };
+}
